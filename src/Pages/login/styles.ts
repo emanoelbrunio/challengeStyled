@@ -1,18 +1,11 @@
-import { useRef,  }from 'react'
 import styled from "styled-components/native"
 
-
-
-
-export const Container = styled.View `
-    
+export const Container = styled.View ` 
     justify-content: center;
     align-items: center;
     padding: 20px;
     width: 100%;
-
 `
-
 
 export const Input = styled.TextInput.attrs({
     placeholderTextColor: "#a7a7a7",
@@ -26,6 +19,7 @@ export const Input = styled.TextInput.attrs({
     width: 100%;
 
     color: ${ props => (props.isFocused ? '#FF6B00' : '#00aa11') };
+
     ${props => props.hasValue && !props.isFocused ? `border-color: #00AA11;` : ``}
 `
 
@@ -39,8 +33,7 @@ export const Button = styled.TouchableOpacity.attrs({
     justify-content: center;
     width: 100%;
 
-    background: ${(props) => props.hasValueE && props.hasValueP ? '#00AA11' : '#a7a7a7'};
-    
+    background: ${(props) => props.hasValueE && props.hasValueP ? '#00AA11' : '#a7a7a7'}; 
 `
 export const TextButton = styled.Text`
     font-size: 20px;
@@ -53,7 +46,6 @@ export const SeePass = styled.TouchableOpacity.attrs({
 })`
     width: 100%;
     margin: 5px 0 15px;
-   
 `
 
 export const TextSeePass = styled.Text`
